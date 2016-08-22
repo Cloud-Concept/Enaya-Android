@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="remoteAccessConsumerKey">3MVG92u_V3UMpV.jMfTEOJwvmH2DtB4KIPSuywVRPmt6RzddNYlMeN4I71k1IwDFLuFlTkQEhvDF7H9paeobX</string>
+    <string name="oauthRedirectURI">enaya://mobileoauth/success</string>
+    <string-array name="oauthScopes">
+        <item>api</item>
+    </string-array>
+    <string name="androidPushNotificationClientId"></string>
+</resources>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/noc_top_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/header_background">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/header_logo" />
+
+        <ImageView
+            android:id="@+id/btnLogout"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/logout" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:background="@mipmap/avatar" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageView4"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/imageView4"
+                    android:text="Maria Labito"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/imageView4"
+                    android:text="Senior Marketing Manager"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:text="Outstanding Balance: 2,000 AED"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black" />
+
+            <custom.SquareLayout
+                android:id="@+id/square"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_alignEnd="@+id/linearLayout"
+                android:layout_alignStart="@+id/linearLayout"
+                android:layout_below="@+id/textView3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/chart1"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp" />
+
+            </custom.SquareLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/square"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnDashboard"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:background="@color/homepage_blue"
+                        android:text="Dashboard" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnHistory"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:background="@color/homepage_orange"
+                            android:text="History" />
+
+                        <Button
+                            android:id="@+id/btnProducts"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:background="@color/homepage_green"
+                            android:text="Products" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnFAQ"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="3dp"
+                        android:layout_weight="2"
+                        android:background="@color/grey"
+                        android:text="FAQ" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1"
+                        android:background="#620080">
+
+                        <com.liulishuo.magicprogresswidget.MagicProgressCircle
+                            android:id="@+id/demoMpc"
+                            android:layout_width="@dimen/mpc_size"
+                            android:layout_height="@dimen/mpc_size"
+                            android:layout_centerInParent="true"
+                            app:mpc_default_color="@color/noc_top_background"
+                            app:mpc_end_color="@color/homepage_orange"
+                            app:mpc_percent="0.8"
+                            app:mpc_start_color="@color/homepage_green"
+                            app:mpc_stroke_width="1dp" />
+
+                        <custom.AnimTextView
+                            android:id="@+id/demo_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="36sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <custom.Fab
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@android:drawable/ic_input_add" />
+
+            <com.gordonwong.materialsheetfab.DimOverlayFrameLayout
+                android:id="@+id/overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- Circular reveal container for the sheet -->
+            <io.codetail.widget.RevealLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end|bottom"
+                android:orientation="vertical">
+
+
+                <!-- Sheet that contains your items -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/fab_sheet"
+                    style="@style/Widget.MaterialSheetFab.Sheet">
+
+                    <!-- Sheet items -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- Recording -->
+                        <RelativeLayout
+                            android:id="@+id/fab_sheet_item_recording"
+                            android:layout_width="@dimen/sheet_width"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/image1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/sf__icon" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="Salesforce"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/note_textsize"
+                                android:layout_toRightOf="@+id/image1"
+                                android:layout_centerVertical="true"
+                                android:layout_alignBaseline="@+id/image1"/>
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/fab_sheet_item_reminder"
+                            android:layout_width="@dimen/sheet_width"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/image2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/sf__icon" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="Reminder"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/note_textsize"
+                                android:layout_toRightOf="@+id/image2"
+                                android:layout_centerVertical="true"
+                                android:layout_alignBaseline="@+id/image2"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/fab_sheet_item_photo"
+                            android:layout_width="@dimen/sheet_width"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/image3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/sf__icon" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="Photo"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/note_textsize"
+                                android:layout_toRightOf="@+id/image3"
+                                android:layout_centerVertical="true"
+                                android:layout_alignBaseline="@+id/image3"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </io.codetail.widget.RevealLinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

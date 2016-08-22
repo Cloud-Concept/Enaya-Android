@@ -1,0 +1,5 @@
+include ':enayaframework'
+include 'forcedroid:libs:SalesforceSDK', ':material-sheet-fab'
+include 'forcedroid:libs:SmartStore'
+include 'forcedroid:libs:SmartSync'
+include 'Enaya'

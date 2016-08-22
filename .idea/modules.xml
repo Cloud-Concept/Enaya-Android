@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Enaya.iml" filepath="$PROJECT_DIR$/Enaya.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Enaya/Enaya-Enaya.iml" filepath="$PROJECT_DIR$/Enaya/Enaya-Enaya.iml" />
+      <module fileurl="file://$PROJECT_DIR$/forcedroid/libs/SalesforceSDK/SalesforceSDK.iml" filepath="$PROJECT_DIR$/forcedroid/libs/SalesforceSDK/SalesforceSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/forcedroid/libs/SmartStore/SmartStore.iml" filepath="$PROJECT_DIR$/forcedroid/libs/SmartStore/SmartStore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/forcedroid/libs/SmartSync/SmartSync.iml" filepath="$PROJECT_DIR$/forcedroid/libs/SmartSync/SmartSync.iml" />
+      <module fileurl="file://$PROJECT_DIR$/enayaframework/enayaframework.iml" filepath="$PROJECT_DIR$/enayaframework/enayaframework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/forcedroid/forcedroid.iml" filepath="$PROJECT_DIR$/forcedroid/forcedroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/forcedroid/libs/libs.iml" filepath="$PROJECT_DIR$/forcedroid/libs/libs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/material-sheet-fab/material-sheet-fab.iml" filepath="$PROJECT_DIR$/material-sheet-fab/material-sheet-fab.iml" />
+    </modules>
+  </component>
+</project>

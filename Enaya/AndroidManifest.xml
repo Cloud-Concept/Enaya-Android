@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cloudconcept"
+    android:installLocation="internalOnly"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="23" />
+
+    <!--
+        GCM permission to ensure that only this application can
+        receive the messages and registration result. This must be of
+        the format <app-package-name>.C2D_MESSAGE for it to work.
+    -->
+    <permission
+        android:name="com.cloudconcept.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.cloudconcept.C2D_MESSAGE" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".EnayaApp"
+        android:configChanges="orientation|keyboardHidden"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:manageSpaceActivity="com.salesforce.androidsdk.ui.ManageSpaceActivity"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateAlwaysHidden|stateHidden|adjustPan">
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EnayaIntro"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".HomepageActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DashboardActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ProductsActivity"
+            android:label="@string/title_activity_products"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ItemListActivity"
+            android:label="@string/title_item_list"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".ItemDetailActivity"
+            android:label="@string/title_item_detail"
+            android:parentActivityName=".ItemListActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cloudconcept.ItemListActivity" />
+        </activity>
+    </application>
+
+</manifest>

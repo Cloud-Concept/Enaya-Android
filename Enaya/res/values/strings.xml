@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="account_type">com.cloudconcept.login</string>
+    <string name="app_name"><b>Enaya</b></string>
+    <string name="app_package">com.cloudconcept</string>
+    <string name="welcome">Welcome %s</string>
+    <string name="logout_button">Logout</string>
+    <string name="fetch_contacts_button">Fetch Contacts</string>
+    <string name="fetch_accounts_button">Fetch Accounts</string>
+    <string name="clear_button">Clear</string>
+    <string name="recording">Salesforce</string>
+    <string name="reminder">Reminder</string>
+    <string name="photo">Photo</string>
+    <string name="title_activity_products">ProductsActivity</string>
+</resources>
